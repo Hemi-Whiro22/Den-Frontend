@@ -8,3 +8,4 @@ async function logToRongo(speaker, text) {
   console.log("Rongo Whisper:", data.rongo);
   document.getElementById('rongoWhisper').innerText = data.rongo;
 }
+window.scribeEntry = sendToScribe;

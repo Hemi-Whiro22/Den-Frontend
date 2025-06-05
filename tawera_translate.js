@@ -7,3 +7,4 @@ async function translateText(text) {
   const data = await res.json();
   return data.translation;
 }
+window.translateTest = runTranslate;

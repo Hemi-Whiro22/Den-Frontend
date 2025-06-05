@@ -32,3 +32,5 @@ export async function runOCR() {
 
 // Attach globally for HTML buttons
 window.ocrTest = runOCR;
+
+window.ocrTest = runOCR;

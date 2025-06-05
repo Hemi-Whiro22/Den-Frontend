@@ -7,3 +7,4 @@ async function speakText(text) {
   const audio = new Audio('/static/speak.mp3');
   audio.play();
 }
+window.speakText = runTTS;
