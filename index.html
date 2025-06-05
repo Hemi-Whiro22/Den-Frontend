@@ -41,17 +41,30 @@
       <input type="text" id="rongoInput" placeholder="Speak to Rongo..." />
       <button onclick="sendToRongo()">Send</button>
     </section>
-  </div>
 
- <script type="module" src="kitenga_ocr.js"></script>
+    <div>
+  <input type="text" id="whisper-input" placeholder="Whisper something..." />
+  <button onclick="gptWhisper()">Send Whisper</button>
+  <p id="whisper-response"></p>
+</div>
+
+  </div>
+</div>
+
+<script src="den.js"></script>
+<script type="module" src="kitenga_ocr.js"></script>
 <script type="module" src="tawera_translate.js"></script>
 <script type="module" src="wairua_tts.js"></script>
 <script type="module" src="rongoComms.js"></script>
 
-  <script>
-    document.getElementById("toggle-theme").addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-    });
-  </script>
+<script>
+  document.getElementById("toggle-theme").addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+</script>
+
+</body>
+</html>
+
 </body>
 </html>
