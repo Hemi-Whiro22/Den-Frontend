@@ -8,3 +8,8 @@ async function translateText(text) {
   return data.translation;
 }
 window.translateTest = runTranslate;
+
+function runTranslate() {
+  // your logic here
+}
+window.translateTest = runTranslate;
