@@ -1,0 +1,33 @@
+
+body.dark-mode {
+  background-color: #111;
+  color: #f2f2f2;
+  font-family: monospace;
+  padding: 20px;
+}
+button {
+  margin-bottom: 10px;
+}
+pre {
+  background: #222;
+  padding: 10px;
+}
+#rongoComms {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: #000;
+  padding: 10px;
+  width: 300px;
+  height: 200px;
+  overflow-y: auto;
+  border: 2px solid #444;
+}
+#rongoLog {
+  height: 140px;
+  overflow-y: scroll;
+  font-size: 0.9em;
+  background: #111;
+  padding: 5px;
+  margin-bottom: 5px;
+}

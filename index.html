@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Den Pack Agent UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark-mode">
+  <div id="den-container">
+    <header>
+      <h1>🐺 The Den – Pack Agent Panel</h1>
+      <button id="toggle-theme">Toggle 🌙 / ☀️</button>
+    </header>
+
+    <section id="agent-panel">
+      <h2>📜 Rongohia (Scribe)</h2>
+      <button onclick="scribeTest()">Test Scribe</button>
+      <pre id="scribeOutput"></pre>
+
+      <h2>👁️ Kitenga (OCR)</h2>
+      <button onclick="ocrTest()">Test OCR</button>
+      <pre id="ocrOutput"></pre>
+
+      <h2>🌐 Tāwera (Translate)</h2>
+      <button onclick="translateTest()">Test Translate</button>
+      <pre id="translateOutput"></pre>
+
+      <h2>🔊 Wairua (Speak)</h2>
+      <button onclick="ttsTest()">Test TTS</button>
+      <pre id="ttsOutput"></pre>
+    </section>
+
+    <section id="archiveSection">
+      <h2>📚 Archived Kōrero</h2>
+      <ul id="archiveList"></ul>
+    </section>
+
+    <section id="rongoComms">
+      <h2>🧠 Rongo Comms</h2>
+      <div id="rongoLog"></div>
+      <input type="text" id="rongoInput" placeholder="Speak to Rongo..." />
+      <button onclick="sendToRongo()">Send</button>
+    </section>
+  </div>
+
+  <script type="module" src="js/pack_agents.js"></script>
+  <script src="js/rongoComms.js"></script>
+  <script>
+    document.getElementById("toggle-theme").addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>
